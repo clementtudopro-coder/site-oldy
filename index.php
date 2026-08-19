@@ -25,9 +25,7 @@ function bloc_actif(array $b): bool { return ($b['actif'] ?? true) !== false; }
 <meta property="og:description" content="<?= h($site['description']) ?>">
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/polices.css">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
