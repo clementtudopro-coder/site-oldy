@@ -1,0 +1,15 @@
+---
+# Utilisé par cPanel Git Version Control quand on clique sur « Deploy HEAD Commit ».
+# Copie le site vers le dossier du domaine ateliersoldy.fr.
+#
+# LISEZ-MOI.md n'est volontairement pas copié : la documentation reste dans le
+# dépôt et n'a rien à faire sur le site en ligne.
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/tucl9724/ateliersoldy.fr/
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp contenu.php $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp -R blocs $DEPLOYPATH
+    - /bin/cp -R partials $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH

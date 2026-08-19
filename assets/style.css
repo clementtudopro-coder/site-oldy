@@ -1,0 +1,232 @@
+/* =========================================================================
+   OLDY — feuille de style du site vitrine
+   Charte reprise de l'espace client : bordeaux #7D0025 sur crème #F6F3EE,
+   titres Playfair Display, textes Open Sans.
+   ========================================================================= */
+
+:root {
+  --bordeaux:       #7D0025;
+  --bordeaux-fonce: #5C001B;
+  --rose-pale:      #F1DEE3;
+  --creme:          #F6F3EE;
+  --blanc:          #FFFFFF;
+  --bordure:        #E7DCCE;
+  --texte:          #7D0025;
+  --texte-doux:     rgba(125, 0, 37, .72);
+  --texte-attenue:  rgba(125, 0, 37, .55);
+  --rayon:          10px;
+  --ombre:          0 1px 3px rgba(92, 0, 27, .10), 0 1px 2px rgba(92, 0, 27, .06);
+  --ombre-forte:    0 8px 24px rgba(92, 0, 27, .10);
+  --titre:          "Playfair Display", Georgia, "Times New Roman", serif;
+  --corps:          "Open Sans", "Segoe UI", Arial, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--creme);
+  color: var(--texte);
+  font-family: var(--corps);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a   { color: inherit; }
+
+.conteneur        { width: min(1120px, 100% - 3rem); margin-inline: auto; }
+.conteneur-etroit { width: min(720px, 100% - 3rem); }
+.centre           { text-align: center; }
+
+/* ------------------------------- En-tête ------------------------------- */
+
+.entete {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(246, 243, 238, .92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--bordure);
+}
+.entete-rangee {
+  display: flex; align-items: center; gap: 1.5rem;
+  min-height: 72px;
+}
+.marque { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+.marque-logo { width: 38px; height: 38px; }
+.marque-nom {
+  font-family: var(--titre); font-size: 1.5rem; font-weight: 700;
+  letter-spacing: .04em;
+}
+.nav { display: flex; gap: 1.75rem; margin-left: auto; }
+.nav a {
+  text-decoration: none; font-size: .95rem; color: var(--texte-doux);
+  padding-block: .25rem; border-bottom: 2px solid transparent;
+  transition: color .15s, border-color .15s;
+}
+.nav a:hover { color: var(--bordeaux); border-bottom-color: var(--bordeaux); }
+
+/* -------------------------------- Boutons ------------------------------ */
+
+.bouton {
+  display: inline-block; padding: .7rem 1.4rem;
+  background: var(--bordeaux); color: var(--blanc);
+  font-size: .95rem; font-weight: 600; text-decoration: none;
+  border: 1px solid var(--bordeaux); border-radius: var(--rayon);
+  transition: background .15s, transform .15s;
+}
+.bouton:hover { background: var(--bordeaux-fonce); transform: translateY(-1px); }
+.bouton-espace { margin-left: 0; white-space: nowrap; }
+.nav + .bouton-espace { margin-left: 0; }
+.entete-rangee .bouton-espace { margin-left: 0; }
+
+.bouton-fantome { background: transparent; color: var(--bordeaux); }
+.bouton-fantome:hover { background: var(--rose-pale); }
+
+.bouton-clair { background: var(--blanc); color: var(--bordeaux); border-color: var(--blanc); }
+.bouton-clair:hover { background: var(--rose-pale); }
+.bouton-fantome-clair { background: transparent; color: var(--blanc); border-color: rgba(255,255,255,.55); }
+.bouton-fantome-clair:hover { background: rgba(255,255,255,.12); }
+
+.actions { display: flex; flex-wrap: wrap; gap: .85rem; justify-content: center; margin-top: 2rem; }
+
+/* ------------------------------- Sections ------------------------------ */
+
+.section     { padding: 5.5rem 0; }
+.section-alt { background: var(--blanc); }
+
+.surtitre {
+  text-transform: uppercase; letter-spacing: .16em;
+  font-size: .78rem; font-weight: 600; color: var(--texte-attenue);
+  margin: 0 0 1rem;
+}
+.titre-section {
+  font-family: var(--titre); font-weight: 600;
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem); line-height: 1.2;
+  margin: 0 0 1.25rem;
+}
+.intro      { color: var(--texte-doux); max-width: 62ch; margin: 0 auto 3rem; }
+.paragraphe { color: var(--texte-doux); margin: 0 0 1.1rem; }
+
+/* --------------------------------- Hero -------------------------------- */
+
+.hero {
+  padding: 6.5rem 0 6rem;
+  background: linear-gradient(180deg, var(--rose-pale) 0%, var(--creme) 100%);
+  text-align: center;
+}
+.hero-inner { max-width: 780px; margin-inline: auto; }
+.hero-titre {
+  font-family: var(--titre); font-weight: 700;
+  font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.1;
+  margin: 0 0 1.5rem;
+}
+.hero-texte { font-size: 1.15rem; color: var(--texte-doux); margin: 0 auto; max-width: 60ch; }
+
+/* -------------------------------- Cartes ------------------------------- */
+
+.grille {
+  display: grid; gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 3rem;
+}
+.carte {
+  background: var(--creme); border: 1px solid var(--bordure);
+  border-radius: var(--rayon); padding: 1.75rem;
+  box-shadow: var(--ombre);
+}
+.section-alt .carte { background: var(--creme); }
+.section:not(.section-alt) .carte { background: var(--blanc); }
+.carte-titre { font-family: var(--titre); font-size: 1.25rem; font-weight: 600; margin: 0 0 .6rem; }
+.carte-texte { color: var(--texte-doux); font-size: .96rem; margin: 0; }
+
+.carte-offre { display: flex; flex-direction: column; }
+.offre-prix {
+  font-family: var(--titre); font-size: 1.7rem; font-weight: 700;
+  margin: 0 0 .75rem; color: var(--bordeaux);
+}
+
+/* ------------------------------- Citation ------------------------------ */
+
+.citation-section { background: var(--blanc); }
+.citation { margin: 0; text-align: center; }
+.citation-texte {
+  font-family: var(--titre); font-style: italic;
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem); line-height: 1.5;
+  margin: 0 0 1.75rem;
+}
+.citation-signature { display: flex; flex-direction: column; gap: .2rem; }
+.citation-auteur { font-weight: 600; }
+.citation-role   { font-size: .9rem; color: var(--texte-attenue); }
+
+/* -------------------------------- Étapes ------------------------------- */
+
+.etapes { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.25rem; max-width: 780px; margin-inline: auto; }
+.etape  { display: flex; gap: 1.25rem; align-items: flex-start; }
+.etape-num {
+  flex: 0 0 auto; width: 40px; height: 40px; border-radius: 50%;
+  background: var(--bordeaux); color: var(--blanc);
+  display: grid; place-items: center;
+  font-family: var(--titre); font-weight: 700; font-size: 1.05rem;
+}
+.etape-titre { font-family: var(--titre); font-size: 1.15rem; font-weight: 600; margin: .35rem 0 .3rem; }
+.etape-texte { color: var(--texte-doux); font-size: .96rem; margin: 0; }
+
+/* ------------------------------- Encadré ------------------------------- */
+
+.encadre {
+  margin-top: 3rem; padding: 2rem;
+  background: var(--rose-pale); border-radius: var(--rayon);
+  border: 1px solid var(--bordure);
+}
+.encadre-titre   { font-family: var(--titre); font-size: 1.3rem; font-weight: 600; margin: 0 0 .75rem; }
+.encadre-texte   { color: var(--texte-doux); margin: 0 0 1rem; }
+.encadre-exemple {
+  font-weight: 600; background: var(--blanc); border-radius: var(--rayon);
+  padding: .85rem 1.1rem; margin: 0 0 1rem; display: inline-block;
+}
+.encadre-note    { color: var(--texte-doux); font-size: .93rem; margin: 0; }
+
+/* -------------------------------- Contact ------------------------------ */
+
+.section-contact { background: var(--bordeaux); color: var(--blanc); }
+.titre-clair, .paragraphe-clair { color: var(--blanc); }
+.paragraphe-clair { opacity: .88; }
+
+/* --------------------------------- Pied -------------------------------- */
+
+.pied { background: var(--bordeaux-fonce); color: var(--blanc); padding: 3rem 0 2rem; }
+.pied-rangee { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; align-items: flex-start; }
+.pied-nom { font-family: var(--titre); font-size: 1.5rem; font-weight: 700; margin: 0; letter-spacing: .04em; }
+.pied-baseline { margin: .25rem 0 0; opacity: .75; font-size: .93rem; }
+.pied-liens { display: flex; flex-direction: column; gap: .4rem; font-size: .93rem; }
+.pied-liens a { opacity: .85; text-decoration: none; }
+.pied-liens a:hover { opacity: 1; text-decoration: underline; }
+.pied-legal {
+  margin: 2.5rem 0 0; padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,.18);
+  font-size: .85rem; opacity: .7;
+}
+
+/* ------------------------------ Responsive ----------------------------- */
+
+@media (max-width: 860px) {
+  .nav { display: none; }
+  .bouton-espace { margin-left: auto; }
+  .section { padding: 4rem 0; }
+  .hero { padding: 4.5rem 0 4rem; }
+  .conteneur, .conteneur-etroit { width: min(100% - 2rem, 1120px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+/* ------- Ancres : compenser la hauteur de l'en-tête fixe ------- */
+html { scroll-behavior: smooth; }
+.section, .hero { scroll-margin-top: 88px; }
+
+/* ------- Grille des offres : centrer la dernière rangée ------- */
+.grille-offres { justify-content: center; }
+
+.actions-encadre { justify-content: flex-start; margin-top: 1.5rem; }

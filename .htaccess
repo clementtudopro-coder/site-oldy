@@ -1,0 +1,29 @@
+# Sécurité et HTTPS — ateliersoldy.fr
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=31536000"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+Options -Indexes
+
+# Les gabarits et le contenu ne doivent jamais être servis directement :
+# ils ne sont utilisables que via index.php.
+<FilesMatch "^(contenu)\.php$">
+    Require all denied
+</FilesMatch>
+<FilesMatch "\.(bak|sql|md|yml|yaml|ini|log|sh|desactive)$">
+    Require all denied
+</FilesMatch>
+
+RedirectMatch 404 /\.(?!well-known)
+RedirectMatch 404 ^/(blocs|partials)/
