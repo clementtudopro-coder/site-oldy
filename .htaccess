@@ -18,7 +18,7 @@ Options -Indexes
 
 # Les gabarits et le contenu ne doivent jamais être servis directement :
 # ils ne sont utilisables que via index.php.
-<FilesMatch "^(contenu)\.php$">
+<FilesMatch "^(contenu|contenu-legal|page-legale)\.php$">
     Require all denied
 </FilesMatch>
 <FilesMatch "\.(bak|sql|md|yml|yaml|ini|log|sh|desactive)$">

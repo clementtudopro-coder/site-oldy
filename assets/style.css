@@ -230,3 +230,9 @@ html { scroll-behavior: smooth; }
 .grille-offres { justify-content: center; }
 
 .actions-encadre { justify-content: flex-start; margin-top: 1.5rem; }
+
+/* ------------------------------ Pages légales -------------------------- */
+.section-legale { padding-top: 4rem; }
+.legale-maj    { color: var(--texte-attenue); font-size: .9rem; margin: -.5rem 0 2.5rem; }
+.legale-titre  { font-family: var(--titre); font-size: 1.25rem; font-weight: 600; margin: 2.25rem 0 .75rem; }
+.section-legale .paragraphe { font-size: .97rem; }
