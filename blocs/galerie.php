@@ -6,7 +6,7 @@
     <div class="galerie-grille">
       <?php foreach ($bloc['photos'] ?? [] as $photo): ?>
         <figure class="galerie-photo">
-          <img src="assets/photos/<?= h($photo['fichier'] ?? '') ?>" alt="<?= h($photo['alt'] ?? '') ?>" loading="lazy" width="787" height="1400">
+          <img src="/assets/photos/<?= h($photo['fichier'] ?? '') ?>" alt="<?= h($photo['alt'] ?? '') ?>" loading="lazy" width="787" height="1400">
         </figure>
       <?php endforeach; ?>
     </div>

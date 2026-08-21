@@ -24,10 +24,10 @@ function bloc_actif(array $b): bool { return ($b['actif'] ?? true) !== false; }
 <meta property="og:title" content="<?= h($site['titre']) ?>">
 <meta property="og:description" content="<?= h($site['description']) ?>">
 <meta property="og:type" content="website">
-<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/polices.css">
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/polices.css">
 <link rel="canonical" href="https://ateliersoldy.fr/">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 <?php include __DIR__ . '/partials/seo.php'; ?>
 </head>
 <body>

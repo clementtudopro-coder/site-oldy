@@ -16,7 +16,7 @@
     </div>
     <div class="hero-photo-zone">
       <div class="polaroid">
-        <img src="assets/photos/<?= h($bloc['photo']) ?>" alt="<?= h($bloc['photo_alt'] ?? '') ?>" width="700" height="805">
+        <img src="/assets/photos/<?= h($bloc['photo']) ?>" alt="<?= h($bloc['photo_alt'] ?? '') ?>" width="700" height="805">
         <?php if (!empty($bloc['photo_legende'])): ?><p class="polaroid-legende"><?= h($bloc['photo_legende']) ?></p><?php endif; ?>
       </div>
     </div>

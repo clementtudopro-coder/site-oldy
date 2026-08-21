@@ -44,9 +44,9 @@ $urlCanonique    = $article ? $urlBase . $slug . '/' : $urlBase;
 <meta property="og:type" content="<?= $article ? 'article' : 'website' ?>">
 <?php if ($article): ?><meta property="og:image" content="https://ateliersoldy.fr/assets/photos/<?= h($article['image']) ?>"><?php endif; ?>
 <link rel="canonical" href="<?= h($urlCanonique) ?>">
-<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/polices.css">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/polices.css">
+<link rel="stylesheet" href="/assets/style.css">
 <?php if ($article): ?>
 <script type="application/ld+json">
 <?= json_encode([
@@ -86,7 +86,7 @@ $urlCanonique    = $article ? $urlBase . $slug . '/' : $urlBase;
 
       <?php if (!empty($article['image'])): ?>
         <p class="article-image">
-          <img src="assets/photos/<?= h($article['image']) ?>" alt="<?= h($article['image_alt'] ?? '') ?>" loading="lazy">
+          <img src="/assets/photos/<?= h($article['image']) ?>" alt="<?= h($article['image_alt'] ?? '') ?>" loading="lazy">
         </p>
       <?php endif; ?>
 
@@ -152,7 +152,7 @@ $urlCanonique    = $article ? $urlBase . $slug . '/' : $urlBase;
             <article class="carte blog-carte">
               <?php if (!empty($a['image'])): ?>
                 <a class="blog-carte-image" href="/blog/<?= h($s) ?>/">
-                  <img src="assets/photos/<?= h($a['image']) ?>" alt="<?= h($a['image_alt'] ?? '') ?>" loading="lazy">
+                  <img src="/assets/photos/<?= h($a['image']) ?>" alt="<?= h($a['image_alt'] ?? '') ?>" loading="lazy">
                 </a>
               <?php endif; ?>
               <p class="offre-gamme"><?= h(date('d/m/Y', strtotime($a['date']))) ?></p>

@@ -11,8 +11,8 @@
         <a href="<?= h($site['espace_url']) ?>"><?= h($site['espace_label']) ?></a>
       </div>
       <div class="pied-liens">
-        <a href="mentions-legales.php">Mentions légales</a>
-        <a href="confidentialite.php">Politique de confidentialité</a>
+        <a href="/mentions-legales.php">Mentions légales</a>
+        <a href="/confidentialite.php">Politique de confidentialité</a>
       </div>
     </div>
     <p class="pied-legal">© <?= date('Y') ?> <?= h($site['nom']) ?> — une activité de Maison Kara</p>
