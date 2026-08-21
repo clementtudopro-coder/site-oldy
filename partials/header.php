@@ -1,7 +1,7 @@
 <header class="entete">
   <div class="conteneur entete-rangee">
     <a class="marque" href="#haut">
-      <img class="marque-logo" src="assets/logo.svg" alt="Ateliers OLDY" width="90" height="51">
+      <img class="marque-logo" src="assets/logo.svg" alt="Ateliers OLDY" width="99" height="56">
     </a>
 
     <nav class="nav" aria-label="Navigation principale">
