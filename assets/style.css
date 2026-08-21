@@ -409,4 +409,4 @@ html { scroll-behavior: smooth; }
 .blog-carte .carte-titre { margin: 0 0 .5rem; }
 .blog-carte .carte-titre a { text-decoration: none; }
 .blog-carte .carte-titre a:hover { color: var(--bordeaux); }
-.blog-grille { justify-content: center; }
+.blog-grille { grid-template-columns: repeat(auto-fit, minmax(260px, 360px)); justify-content: center; }
