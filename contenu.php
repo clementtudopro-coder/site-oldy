@@ -146,7 +146,7 @@ return [
       ],
       'encadre_titre'   => 'Un budget maîtrisé, adapté à votre établissement',
       'encadre_texte'   => 'Le prix d’un atelier se compose d’un forfait d’animation et d’un coût matériel par participant. Le coût matériel dépend des options choisies : vous ajustez le budget à la taille du groupe et au type d’atelier.',
-      'encadre_exemple' => 'À partir de 230 € HT pour un groupe de 10 personnes, matériel compris.',
+      'encadre_exemple' => 'La gamme Découverte démarre à 230 € HT, pour un groupe de 10 personnes, matériel compris.',
       'encadre_note'    => 'Le tarif est dégressif : plus l’engagement s’inscrit dans la durée — cycle de 3 mois, 6 mois ou sur l’année — plus le tarif par séance diminue. Chaque proposition fait l’objet d’un devis personnalisé, adapté à votre établissement.',
     ],
 
