@@ -51,10 +51,10 @@ a   { color: inherit; }
 }
 .entete-rangee {
   display: flex; align-items: center; gap: 1.5rem;
-  min-height: 72px;
+  min-height: 96px;
 }
 .marque { display: flex; align-items: center; text-decoration: none; }
-.marque-logo { height: 56px; width: auto; }
+.marque-logo { height: 72px; width: auto; }
 .nav { display: flex; gap: 1.75rem; margin-left: auto; }
 .nav a {
   text-decoration: none; font-size: .95rem; color: var(--texte-doux);
@@ -311,6 +311,8 @@ a   { color: inherit; }
   .section { padding: 4rem 0; }
   .hero { padding: 4.5rem 0 4rem; }
   .conteneur, .conteneur-etroit { width: min(100% - 2rem, 1120px); }
+  .entete-rangee { min-height: 64px; }
+  .marque-logo { height: 40px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -319,7 +321,7 @@ a   { color: inherit; }
 
 /* ------- Ancres : compenser la hauteur de l'en-tête fixe ------- */
 html { scroll-behavior: smooth; }
-.section, .hero { scroll-margin-top: 88px; }
+.section, .hero { scroll-margin-top: 100px; }
 
 /* ------- Grille des offres : centrer la dernière rangée ------- */
 .grille-offres { justify-content: center; }
