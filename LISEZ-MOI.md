@@ -37,6 +37,11 @@ Si le bloc a un \`id\`, donnez-lui un identifiant différent.
 Pour créer un nouveau type de bloc, ajoutez un fichier dans \`blocs/\`
 portant le nom du type, puis utilisez ce type dans \`contenu.php\`.
 
+Dans le bloc \`offres\`, chaque atelier peut avoir un champ \`'gamme'\`
+optionnel (ex. \`'gamme' => 'Gamme Essentiel'\`) : un petit repère affiché
+au-dessus du nom, sans jamais indiquer de prix — les tarifs restent
+consultables uniquement dans l'espace client.
+
 ## Règle importante
 
 N'écrivez jamais de HTML dans \`contenu.php\`. Tout est échappé

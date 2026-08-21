@@ -5,6 +5,9 @@
     <div class="grille grille-offres">
       <?php foreach ($bloc['offres'] ?? [] as $offre): ?>
         <article class="carte carte-offre">
+          <?php if (!empty($offre['gamme'])): ?>
+            <p class="offre-gamme"><?= h($offre['gamme']) ?></p>
+          <?php endif; ?>
           <h3 class="carte-titre"><?= h($offre['nom'] ?? '') ?></h3>
           <?php if (!empty($offre['prix'])): ?>
             <p class="offre-prix"><?= h($offre['prix']) ?></p>
