@@ -10,7 +10,11 @@
         <a href="tel:<?= h(str_replace(' ', '', $site['telephone'])) ?>"><?= h($site['telephone']) ?></a>
         <a href="<?= h($site['espace_url']) ?>"><?= h($site['espace_label']) ?></a>
       </div>
+      <div class="pied-liens">
+        <a href="mentions-legales.php">Mentions légales</a>
+        <a href="confidentialite.php">Politique de confidentialité</a>
+      </div>
     </div>
-    <p class="pied-legal">© <?= date('Y') ?> <?= h($site['nom']) ?> — une initiative de Maison Kara Paris</p>
+    <p class="pied-legal">© <?= date('Y') ?> <?= h($site['nom']) ?> — une activité de Maison Kara</p>
   </div>
 </footer>
