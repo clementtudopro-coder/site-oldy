@@ -42,6 +42,12 @@ optionnel (ex. \`'gamme' => 'Gamme Essentiel'\`) : un petit repère affiché
 au-dessus du nom, sans jamais indiquer de prix — les tarifs restent
 consultables uniquement dans l'espace client.
 
+Chaque atelier a aussi un champ \`'theme'\` (ex. \`'theme' => 'Végétal'\`) :
+les filtres cliquables au-dessus de la liste des ateliers sont générés
+automatiquement à partir des thèmes présents — pas besoin de les
+modifier ailleurs. Deux ateliers avec le même texte de thème
+apparaissent sous le même filtre.
+
 ## Règle importante
 
 N'écrivez jamais de HTML dans \`contenu.php\`. Tout est échappé

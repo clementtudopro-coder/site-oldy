@@ -117,14 +117,14 @@ return [
       'titre'  => 'Nos ateliers',
       'intro'  => 'Huit formats, tous clé en main, pensés pour des groupes d’une dizaine de personnes.',
       'offres' => [
-        ['nom' => 'Suspension parfumée',       'gamme' => 'Gamme Découverte', 'texte' => 'Une suspension parfumée entièrement personnalisable — parfum, fleurs séchées, pierres naturelles, paillettes — à suspendre dans une armoire, un tiroir ou une pièce, qu’elle embaume subtilement.'],
-        ['nom' => 'Bougie parfumée',           'texte' => 'La réalisation complète d’une véritable bougie parfumée, entièrement personnalisable.'],
-        ['nom' => 'Bouquet de cire parfumée',  'gamme' => 'Gamme Essentiel',  'texte' => 'Un bouquet de fleurs en cire : une alternative décorative et parfumée au bouquet frais, qui ne fane pas.'],
-        ['nom' => 'Terrarium',                 'gamme' => 'Gamme Signature',  'texte' => 'Un mini-jardin composé par chaque participant, à garder dans sa chambre ou son logement.'],
-        ['nom' => 'Tableau végétal',           'gamme' => 'Gamme Signature',  'texte' => 'Une composition encadrée de fleurs et feuillages séchés, assemblée comme un petit tableau à accrocher dans sa chambre ou à offrir.'], // texte à valider — brouillon
-        ['nom' => 'Kokedama',                  'gamme' => 'Gamme Découverte', 'texte' => 'Une plante enveloppée de mousse et de fil, façon jardin japonais miniature, à poser sur une coupelle ou à suspendre dans sa chambre.'], // texte à valider — brouillon
-        ['nom' => 'Porte-clefs',               'gamme' => 'Gamme Découverte', 'texte' => 'Un atelier manuel et coloré, façon scoubidou : pampilles, perles et rubans.'],
-        ['nom' => 'Couronne d’automne',        'gamme' => 'Gamme Essentiel',  'texte' => 'Une couronne décorative composée de feuillages, baies et éléments naturels aux couleurs de l’automne, à suspendre sur une porte ou un mur.'], // texte à valider — brouillon
+        ['nom' => 'Suspension parfumée',       'theme' => 'Univers olfactif',   'gamme' => 'Gamme Découverte', 'texte' => 'Une suspension parfumée entièrement personnalisable — parfum, fleurs séchées, pierres naturelles, paillettes — à suspendre dans une armoire, un tiroir ou une pièce, qu’elle embaume subtilement.'],
+        ['nom' => 'Bougie parfumée',           'theme' => 'Univers olfactif',   'texte' => 'La réalisation complète d’une véritable bougie parfumée, entièrement personnalisable.'],
+        ['nom' => 'Bouquet de cire parfumée',  'theme' => 'Univers olfactif',   'gamme' => 'Gamme Essentiel',  'texte' => 'Un bouquet de fleurs en cire : une alternative décorative et parfumée au bouquet frais, qui ne fane pas.'],
+        ['nom' => 'Terrarium',                 'theme' => 'Végétal',            'gamme' => 'Gamme Signature',  'texte' => 'Un mini-jardin composé par chaque participant, à garder dans sa chambre ou son logement.'],
+        ['nom' => 'Tableau végétal',           'theme' => 'Végétal',            'gamme' => 'Gamme Signature',  'texte' => 'Une composition encadrée de fleurs et feuillages séchés, assemblée comme un petit tableau à accrocher dans sa chambre ou à offrir.'], // texte à valider — brouillon
+        ['nom' => 'Kokedama',                  'theme' => 'Végétal',            'gamme' => 'Gamme Découverte', 'texte' => 'Une plante enveloppée de mousse et de fil, façon jardin japonais miniature, à poser sur une coupelle ou à suspendre dans sa chambre.'], // texte à valider — brouillon
+        ['nom' => 'Porte-clefs',               'theme' => 'Créatif & manuel',   'gamme' => 'Gamme Découverte', 'texte' => 'Un atelier manuel et coloré, façon scoubidou : pampilles, perles et rubans.'],
+        ['nom' => 'Couronne d’automne',        'theme' => 'Créatif & manuel',   'gamme' => 'Gamme Essentiel',  'texte' => 'Une couronne décorative composée de feuillages, baies et éléments naturels aux couleurs de l’automne, à suspendre sur une porte ou un mur.'], // texte à valider — brouillon
       ],
       'encadre_titre'   => 'Un budget maîtrisé, adapté à votre établissement',
       'encadre_texte'   => 'Le prix d’un atelier se compose d’un forfait d’animation et d’un coût matériel par participant. Le coût matériel dépend des options choisies : vous ajustez le budget à la taille du groupe et au type d’atelier.',
