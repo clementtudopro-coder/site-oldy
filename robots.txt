@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /blocs/
+Disallow: /partials/
+
+Sitemap: https://ateliersoldy.fr/sitemap.xml

@@ -141,6 +141,11 @@ a   { color: inherit; }
 .carte-texte { color: var(--texte-doux); font-size: .96rem; margin: 0; }
 
 .carte-offre { display: flex; flex-direction: column; }
+.offre-gamme {
+  text-transform: uppercase; letter-spacing: .14em;
+  font-size: .72rem; font-weight: 700; color: var(--bordeaux);
+  margin: 0 0 .35rem;
+}
 .offre-prix {
   font-family: var(--titre); font-size: 1.7rem; font-weight: 700;
   margin: 0 0 .75rem; color: var(--bordeaux);
