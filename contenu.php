@@ -32,6 +32,7 @@ return [
       ['label' => 'Notre mission', 'ancre' => '#mission'],
       ['label' => 'Le déroulé',    'ancre' => '#deroule'],
       ['label' => 'Nos ateliers',  'ancre' => '#ateliers'],
+      ['label' => 'Blog',          'ancre' => '/blog/'],
       ['label' => 'Contact',       'ancre' => '#contact'],
     ],
   ],
@@ -46,6 +47,9 @@ return [
       'texte'    => 'OLDY conçoit et anime des ateliers créatifs et sensoriels, 100 % clé en main, dans les résidences seniors et les établissements accueillant des personnes âgées.',
       'bouton_principal'  => ['label' => 'Demander un devis',      'lien' => '#contact'],
       'bouton_secondaire' => ['label' => 'Découvrir les ateliers', 'lien' => '#ateliers'],
+      'photo'         => 'atelier-1.jpg',
+      'photo_alt'     => 'Résidents assis autour d’une table, créant chacun leur suspension parfumée avec fleurs séchées et perles.',
+      'photo_legende' => 'Atelier suspensions parfumées',
     ],
 
     [

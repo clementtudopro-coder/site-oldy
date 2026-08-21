@@ -1,8 +1,7 @@
 <header class="entete">
   <div class="conteneur entete-rangee">
     <a class="marque" href="#haut">
-      <img class="marque-logo" src="assets/logo.svg" alt="" width="38" height="38">
-      <span class="marque-nom"><?= h($site['nom']) ?></span>
+      <img class="marque-logo" src="assets/logo.svg" alt="Ateliers OLDY" width="90" height="51">
     </a>
 
     <nav class="nav" aria-label="Navigation principale">

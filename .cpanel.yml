@@ -4,5 +4,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/tucl9724/ateliersoldy.fr/
-    - /bin/cp index.php contenu.php contenu-legal.php page-legale.php mentions-legales.php confidentialite.php robots.txt sitemap.xml .htaccess $DEPLOYPATH
+    - /bin/cp index.php contenu.php contenu-legal.php page-legale.php mentions-legales.php confidentialite.php blog.php blog-contenu.php robots.txt sitemap.xml .htaccess $DEPLOYPATH
     - /bin/cp -R blocs partials assets $DEPLOYPATH

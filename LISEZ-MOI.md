@@ -49,6 +49,11 @@ automatiquement à partir des thèmes présents — pas besoin de les
 modifier ailleurs. Deux ateliers avec le même texte de thème
 apparaissent sous le même filtre.
 
+Le bloc \`hero\` accepte un \`'photo'\` optionnel (nom du fichier dans
+\`assets/photos/\`, plus \`'photo_alt'\` et \`'photo_legende'\`) : la mise en
+page passe alors en deux colonnes avec la photo à droite. Sans \`'photo'\`,
+le hero reste centré, sans photo, comme avant.
+
 Dans le bloc \`galerie\`, chaque photo a un \`'fichier'\` (le nom exact du
 fichier dans \`assets/photos/\`) et un \`'alt'\` (une phrase qui décrit la
 photo — lue par les lecteurs d'écran et affichée si l'image ne charge
@@ -61,10 +66,35 @@ N'écrivez jamais de HTML dans \`contenu.php\`. Tout est échappé
 automatiquement : c'est ce qui rend le site insensible aux injections.
 Pour les apostrophes dans un texte, utilisez le caractère typographique ’.
 
+## Le blog
+
+Le blog fonctionne sur le même principe, dans deux fichiers séparés :
+
+    blog.php          moteur du blog (liste + affichage d'un article)
+    blog-contenu.php  LE fichier à modifier pour écrire/modifier un article
+
+Pour ajouter un article : ouvrez \`blog-contenu.php\`, copiez-collez un bloc
+d'article existant tout en haut de la liste \`articles\`, changez sa clé
+(le slug, utilisé dans l'URL — minuscules, tirets, sans accents) et son
+contenu. Les articles s'affichent du plus récent au plus ancien, dans
+l'ordre où ils sont écrits dans le fichier. Pour masquer un article sans
+le supprimer : \`'actif' => false\`.
+
+Le corps d'un article est une liste de \`sections\` typées : \`intro\`
+(chapeau), \`titre2\`/\`titre3\` (sous-titres), \`paragraphe\`, \`liste\`
+(points avec titre + texte) et \`encadre\` (encart avec lien optionnel).
+Le détail de chaque type est expliqué en commentaire en haut de
+\`blog-contenu.php\`.
+
+Un article est consultable à l'adresse \`ateliersoldy.fr/blog/<slug>/\`.
+La liste des articles est sur \`ateliersoldy.fr/blog/\`.
+
 ## Structure des fichiers
 
-    index.php        moteur de rendu (ne contient aucun texte)
-    contenu.php      LE fichier à modifier
-    blocs/           un gabarit HTML par type de bloc
-    partials/        en-tête et pied de page
-    assets/          feuille de style et logo
+    index.php         moteur de rendu de la page d'accueil (ne contient aucun texte)
+    contenu.php       LE fichier à modifier pour la page d'accueil
+    blog.php          moteur du blog (ne contient aucun texte)
+    blog-contenu.php  LE fichier à modifier pour le blog
+    blocs/            un gabarit HTML par type de bloc (page d'accueil)
+    partials/         en-tête et pied de page
+    assets/           feuille de style, logo et photos
