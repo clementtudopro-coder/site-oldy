@@ -98,6 +98,20 @@ return [
     ],
 
     [
+      'type'     => 'galerie',
+      'actif'    => true,
+      'id'       => 'moments',
+      'surtitre' => 'En images',
+      'titre'    => 'Un moment de partage, en toute simplicité',
+      'intro'    => 'Concentration, échanges et sourires : quelques instants pris sur le vif lors d’un atelier suspensions et bouquets parfumés.',
+      'photos'   => [
+        ['fichier' => 'atelier-1.jpg', 'alt' => 'Résidents assis autour d’une grande table, créant chacun leur suspension parfumée avec fleurs séchées et perles.'],
+        ['fichier' => 'atelier-2.jpg', 'alt' => 'Tara, l’animatrice, échange avec les participants autour du plateau de flacons de parfum et de matériel.'],
+        ['fichier' => 'atelier-3.jpg', 'alt' => 'Gros plan sur les mains des participants composant leurs créations en cire, entourées de fleurs séchées et paillettes.'],
+      ],
+    ],
+
+    [
       'type'   => 'cartes',
       'actif'  => true,
       'id'     => 'materiaux',

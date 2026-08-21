@@ -32,6 +32,7 @@ Si le bloc a un \`id\`, donnez-lui un identifiant différent.
 | \`citation\`  | une citation avec auteur et rôle                  |
 | \`etapes\`    | une liste numérotée d'étapes                      |
 | \`offres\`    | les ateliers avec prix, plus un encadré tarifaire |
+| \`galerie\`   | une grille de photos, avec titre et texte d'intro |
 | \`contact\`   | le bloc final avec e-mail et téléphone            |
 
 Pour créer un nouveau type de bloc, ajoutez un fichier dans \`blocs/\`
@@ -47,6 +48,12 @@ les filtres cliquables au-dessus de la liste des ateliers sont générés
 automatiquement à partir des thèmes présents — pas besoin de les
 modifier ailleurs. Deux ateliers avec le même texte de thème
 apparaissent sous le même filtre.
+
+Dans le bloc \`galerie\`, chaque photo a un \`'fichier'\` (le nom exact du
+fichier dans \`assets/photos/\`) et un \`'alt'\` (une phrase qui décrit la
+photo — lue par les lecteurs d'écran et affichée si l'image ne charge
+pas). Pour ajouter une photo : déposez le fichier image dans
+\`assets/photos/\`, puis ajoutez une ligne dans la liste \`'photos'\`.
 
 ## Règle importante
 

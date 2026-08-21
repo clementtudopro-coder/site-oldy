@@ -134,7 +134,9 @@ a   { color: inherit; }
   background: var(--creme); border: 1px solid var(--bordure);
   border-radius: var(--rayon); padding: 1.75rem;
   box-shadow: var(--ombre);
+  transition: transform .18s ease, box-shadow .18s ease;
 }
+.carte:hover { transform: translateY(-4px); box-shadow: var(--ombre-forte); }
 .section-alt .carte { background: var(--creme); }
 .section:not(.section-alt) .carte { background: var(--blanc); }
 .carte-titre { font-family: var(--titre); font-size: 1.25rem; font-weight: 600; margin: 0 0 .6rem; }
@@ -194,6 +196,27 @@ a   { color: inherit; }
 .carte-offre-detail p {
   border-top: 1px solid var(--bordure); padding-top: 1rem; margin: 0;
   font-size: .87rem; color: var(--texte-attenue);
+}
+
+/* ------------------------------- Galerie -------------------------------- */
+
+.galerie-grille {
+  display: grid; gap: 1.25rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+}
+.galerie-photo {
+  margin: 0; overflow: hidden; border-radius: var(--rayon);
+  box-shadow: var(--ombre); aspect-ratio: 3 / 4;
+}
+.galerie-photo img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
+  display: block; transition: transform .4s ease;
+}
+.galerie-photo:hover img { transform: scale(1.04); }
+@media (max-width: 720px) {
+  .galerie-grille { grid-template-columns: 1fr; }
+  .galerie-photo { aspect-ratio: 4 / 3; }
 }
 
 /* ------------------------------- Citation ------------------------------ */
