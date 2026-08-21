@@ -142,7 +142,7 @@ a   { color: inherit; }
   .hero-grille { grid-template-columns: 1fr; }
   .hero-grille .hero-titre, .hero-grille .hero-texte, .hero-grille .surtitre { text-align: center; }
   .actions-hero { justify-content: center; }
-  .polaroid { transform: none; width: 70%; margin-top: 2.5rem; }
+  .hero-photo-zone { display: none; }
 }
 
 /* -------------------------------- Cartes ------------------------------- */
